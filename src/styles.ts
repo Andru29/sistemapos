@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import styled from "styled-components";
 import { Container, Typography, TextField, Button } from "@mui/material";
 
-export const LoginContainer = styled(Container)(({ theme }) => ({
+export const LoginContainer = styled(Container)(() => ({
   maxWidth: "350px",
   background: "#F8F9FD",
   backgroundImage:
@@ -16,7 +16,7 @@ export const LoginContainer = styled(Container)(({ theme }) => ({
   textAlign: "center",
 }));
 
-export const SalesContainer = styled(Container)(({ theme }) => ({
+export const SalesContainer = styled(Container)(() => ({
   maxWidth: "350px",
   background: "#F8F9FD",
   backgroundImage:
@@ -29,7 +29,7 @@ export const SalesContainer = styled(Container)(({ theme }) => ({
   float: "right",
 }));
 
-export const ProductsContainer = styled(Container)(({ theme }) => ({
+export const ProductsContainer = styled(Container)(() => ({
   maxWidth: "1500px",
   background: "#F8F9FD",
   backgroundImage:
@@ -42,7 +42,7 @@ export const ProductsContainer = styled(Container)(({ theme }) => ({
   float: "left",
 }));
 
-export const HistContainer = styled(Container)(({ theme }) => ({
+export const HistContainer = styled(Container)(() => ({
   width: "100%",
   background: "#F8F9FD",
   backgroundImage:
@@ -55,7 +55,7 @@ export const HistContainer = styled(Container)(({ theme }) => ({
   alignContent: "center",
 }));
 
-export const InpContainer = styled(Container)(({ theme }) => ({
+export const InpContainer = styled(Container)(() => ({
   width: "100%",
   background: "#F8F9FD",
   backgroundImage:
@@ -68,27 +68,27 @@ export const InpContainer = styled(Container)(({ theme }) => ({
   marginBottom: "30px",
 }));
 
-export const LoginTitle = styled(Typography)(({ theme }) => ({
+export const LoginTitle = styled(Typography)(() => ({
   fontWeight: 900,
   fontSize: "30px",
   color: "rgb(16, 137, 211)",
   marginBottom: "20px",
 }));
 
-export const SubTitle = styled(Typography)(({ theme }) => ({
+export const SubTitle = styled(Typography)(() => ({
   fontWeight: 900,
   fontSize: "20px",
   color: "rgb(16, 137, 211)",
   marginBottom: "20px",
 }));
 
-export const TableTitle = styled(Typography)(({ theme }) => ({
+export const TableTitle = styled(Typography)(() => ({
   fontWeight: 900,
   fontSize: "15px",
   color: "rgb(16, 137, 211)",
 }));
 
-export const LoginTextField = styled(TextField)(({ theme }) => ({
+export const LoginTextField = styled(TextField)(() => ({
   background: "white",
   borderRadius: "20px",
   boxShadow: "#cff0ff 0px 10px 10px -5px",
@@ -97,7 +97,7 @@ export const LoginTextField = styled(TextField)(({ theme }) => ({
   },
 }));
 
-export const Select = styled(TextField)(({ theme }) => ({
+export const Select = styled(TextField)(() => ({
   background: "white",
   borderRadius: "20px",
   boxShadow: "#cff0ff 0px 10px 10px -5px",
@@ -106,7 +106,7 @@ export const Select = styled(TextField)(({ theme }) => ({
   },
 }));
 
-export const LoginButton = styled(Button)(({ theme }) => ({
+export const LoginButton = styled(Button)(() => ({
   fontWeight: "bold",
   background:
     "linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%)",
@@ -117,7 +117,7 @@ export const LoginButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-export const EditButton = styled(Button)(({ theme }) => ({
+export const EditButton = styled(Button)(() => ({
   fontWeight: "bold",
   color: "rgb(16, 137, 211)", // Color del texto igual al gradiente inicial
   borderRadius: "20px",
@@ -130,7 +130,7 @@ export const EditButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-export const AddButton = styled(Button)(({ theme }) => ({
+export const AddButton = styled(Button)(() => ({
   minWidth: "40px", // Tamaño fijo cuadrado
   width: "40px", // Mismo valor para ancho y alto
   height: "40px",
@@ -148,7 +148,7 @@ export const AddButton = styled(Button)(({ theme }) => ({
   justifyContent: "center",
 }));
 
-export const WarningButton = styled(Button)(({ theme }) => ({
+export const WarningButton = styled(Button)(() => ({
   fontWeight: "bold",
   background:
     "linear-gradient(45deg, rgb(211, 39, 16) 0%, rgb(216, 75, 75) 100%)",
