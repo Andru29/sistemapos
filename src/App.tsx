@@ -3,7 +3,6 @@ import { AuthProvider } from './context/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
 import Inicio from './components/inicio';
 import { Navigate } from 'react-router-dom';
-import './App.css';
 import Login from './components/login';
 
 function App() {
