@@ -14,7 +14,7 @@ function App() {
         <Routes>
           {/* Ruta para la página de inicio/login */}
           <Route path="/inicio" element={<Inicio />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           
           {/* Ruta para el sistema principal con menú */}
           <Route path="/sistema/*" element={<MenuPrincipal />} />
