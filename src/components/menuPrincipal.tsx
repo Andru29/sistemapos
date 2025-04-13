@@ -9,7 +9,6 @@ import {
   DialogContent,
   DialogActions,
   Typography,
-  CircularProgress,
 } from "@mui/material";
 import {
   Home as HomeIcon,
@@ -24,28 +23,11 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "../styles";
 
-const menuItems = [
-  { text: "Inicio", section: "inicio", icon: <HomeIcon /> },
-  { text: "Ventas", section: "ventas", icon: <PointOfSaleIcon /> },
-  {
-    text: "Historial Ventas",
-    section: "historialventas",
-    icon: <BarChartIcon />,
-  },
-  { text: "Usuarios", section: "usuarios", icon: <PersonIcon /> },
-  {
-    text: "Ingreso Mercancia",
-    section: "ingresoMercancia",
-    icon: <InventoryIcon />,
-  },
-];
 
 const Inicio = React.lazy(() => import("./inicio"));
-const Ventas = React.lazy(() => import("./ventas"));
 
 const MenuPrincipal = () => {
   const [openConfirmLogOut, setOpenConfirmLogOut] = useState(false);
-  const [loadingSection, setLoadingSection] = useState<string | null>(null);
   const navigate = useNavigate();
 
   const menuItems = [
@@ -65,11 +47,9 @@ const MenuPrincipal = () => {
   ];
 
   const cambiarSeccion = (seccion: string) => {
-    setLoadingSection(seccion);
     // Simulamos carga con timeout
     setTimeout(() => {
       navigate(`/${seccion}`);
-      setLoadingSection(null);
     }, 500);
   };
 
@@ -129,7 +109,6 @@ const MenuPrincipal = () => {
           <Suspense fallback={<div>Cargando...</div>}>
             <Routes>
               <Route path="inicio" element={<Inicio />} />
-              <Route path="ventas" element={<Ventas />} />
             </Routes>
           </Suspense>
         </Box>
