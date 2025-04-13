@@ -93,28 +93,6 @@ import {
               </Box>
             </Toolbar>
           </AppBar>
-  
-          {/* Contenido principal */}
-          <Box
-            component="main"
-            sx={{
-              flexGrow: 1,
-              p: 3,
-              mt: "64px",
-              minHeight: "calc(100vh - 64px)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column"
-            }}
-          >
-            <Typography variant="h4" gutterBottom>
-              Bienvenido al Sistema POS
-            </Typography>
-            <Typography variant="body1">
-              Selecciona una sección del menú superior para comenzar
-            </Typography>
-          </Box>
         </Box>
   
         {/* Diálogo de confirmación de cierre de sesión */}
