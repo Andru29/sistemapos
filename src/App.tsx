@@ -1,8 +1,8 @@
-import Loader from "./loader"
+import Inicio from "./components/inicio"
 
 function App() {
   return (
-    <Loader />
+    <Inicio />
   )
 }
 
